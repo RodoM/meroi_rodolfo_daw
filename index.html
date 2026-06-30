@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DAW PARCIAL 2 - Rodolfo Meroi</title>
+</head>
+<body>
+    <div class="container form">
+        <form class="form">
+            <label>Ciudad</label>
+            <input id="ciudad" />
+            <button id="btnClima" type="submit">Consultar clima</button>
+        </form>
+
+        <div id="results">
+            <p>Ciudad: <span id="ciudadNombre"></span></p>
+            <p>Temperatura actual: <span id="ciudadTemperatura"></span></p>
+            <p>Velocidad del viento: <span id="ciudadViento"></span></p>
+            <p>Código de clima: <span id="ciudadCodigo"></span></p>
+        </div>
+
+        <div id="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

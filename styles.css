@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.container {
+    background-color: white;
+    border: 1px solid gray;
+    max-width: 800px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#results {
+    display: none;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.5);
+    padding: 4px;
+    margin-top: 8px;
+}
+
+#error {
+    display: none;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 4px;
+    margin-top: 8px;
+}
