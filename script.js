@@ -49,6 +49,7 @@ const sendButton = document.getElementById("btnClima")
 const cityInput = document.getElementById("ciudad")
 
 const resultsContainer = document.getElementById("results")
+const statusContainer = document.getElementById("elemento")
 
 const cityName = document.getElementById("ciudadNombre")
 const cityTemperature = document.getElementById("ciudadTemperatura")
@@ -59,7 +60,7 @@ sendButton.addEventListener("click", async (e) => {
     e.preventDefault()
     resultsContainer.style.display = "none"
     errorContainer.style.display = "none"
-    sendButton.textContent = "Consultando..."
+    statusContainer.style.display = "block"
     sendButton.disabled = true
 
     try {
@@ -79,7 +80,7 @@ sendButton.addEventListener("click", async (e) => {
     } catch (error) {
         console.error("Error:", error)
     } finally {
-        sendButton.textContent = "Consultar clima"
+        statusContainer.style.display = "none"
         sendButton.disabled = false
     }
 })
